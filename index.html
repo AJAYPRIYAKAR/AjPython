@@ -1,129 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>AJ'sPython - Learn Python in 4 Weeks</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0066cc;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            color: #0066cc;
-        }
-        section {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        ul {
-            padding-left: 20px;
-        }
-        footer {
-            text-align: center;
-            background: #0066cc;
-            color: white;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>AJ'sPython - Learn Python in 4 Weeks</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f2f5f7;
+    }
+
+    header {
+      background-color: #24292e;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0366d6;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0366d6;
+      cursor: pointer;
+    }
+
+    .content {
+      display: none;
+      padding: 10px 20px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .practice a {
+      display: block;
+      margin: 5px 0;
+      color: #0366d6;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #24292e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to AJ'sPython</h1>
-    <p>Learn Python in 4 Weeks — Free Notes, Roadmap & Practice Questions</p>
+  <h1>AJ'sPython</h1>
+  <p>Interactive 4-Week Python Tutor Website</p>
 </header>
+
+<nav>
+  <a href="#week1">Week 1</a>
+  <a href="#week2">Week 2</a>
+  <a href="#week3">Week 3</a>
+  <a href="#week4">Week 4</a>
+</nav>
 
 <main>
 
-    <section>
-        <h2>🔑 Before You Start Python</h2>
-        <ul>
-            <li>Basic computer knowledge</li>
-            <li>Understanding of what programming is</li>
-            <li>Familiarity with logic & flowcharts (optional but helpful)</li>
-            <li>Patience and curiosity to solve problems 😄</li>
-        </ul>
-    </section>
+  <section>
+    <h2 onclick="toggleContent('pre')">🔑 What to Know Before Learning Python</h2>
+    <div class="content" id="pre">
+      <ul>
+        <li>What is programming?</li>
+        <li>Basic computer usage</li>
+        <li>Logic building and thinking</li>
+      </ul>
+    </div>
+  </section>
 
-    <section>
-        <h2>🗓️ 4-Week Python Roadmap</h2>
-        <h3>Week 1: Python Basics</h3>
-        <ul>
-            <li>What is Python?</li>
-            <li>Installing Python</li>
-            <li>Running Python code</li>
-            <li>Variables and Data Types</li>
-            <li>Operators (Arithmetic, Comparison, Logical)</li>
-            <li>Input and Output</li>
-        </ul>
-        <h3>Week 2: Control Flow & Functions</h3>
-        <ul>
-            <li>Conditional Statements (if, elif, else)</li>
-            <li>Loops (for, while)</li>
-            <li>Break and Continue</li>
-            <li>Functions and Arguments</li>
-            <li>Built-in Functions vs User-defined Functions</li>
-        </ul>
-        <h3>Week 3: Data Structures</h3>
-        <ul>
-            <li>Lists and Tuples</li>
-            <li>Dictionaries and Sets</li>
-            <li>String manipulation</li>
-            <li>List comprehensions</li>
-        </ul>
-        <h3>Week 4: Practice & Projects</h3>
-        <ul>
-            <li>Mini Projects (Calculator, To-do App, Quiz App)</li>
-            <li>Basic File Handling</li>
-            <li>Exception Handling</li>
-            <li>Revision & Final Practice</li>
-        </ul>
-    </section>
+  <section>
+    <h2 id="week1" onclick="toggleContent('week1c')">📘 Week 1: Python Basics</h2>
+    <div class="content" id="week1c">
+      <ul>
+        <li>Intro to Python & Installation</li>
+        <li>Syntax, Variables, and Data Types</li>
+        <li>Input & Output</li>
+        <li>Operators</li>
+      </ul>
+    </div>
+  </section>
 
-    <section>
-        <h2>📘 Notes & Examples</h2>
-        <p>Here’s an example of a simple Python program:</p>
-<pre><code>
-# Hello World in Python
-print("Hello, AJ'sPython!")
-</code></pre>
-        <p>More notes and downloadable PDFs coming soon...</p>
-    </section>
+  <section>
+    <h2 id="week2" onclick="toggleContent('week2c')">🧠 Week 2: Control Flow & Functions</h2>
+    <div class="content" id="week2c">
+      <ul>
+        <li>if, elif, else statements</li>
+        <li>Loops - for and while</li>
+        <li>Functions, arguments, return values</li>
+      </ul>
+    </div>
+  </section>
 
-    <section>
-        <h2>🧠 Practice Questions</h2>
-        <ul>
-            <li>Write a Python program to swap two numbers.</li>
-            <li>Check whether a number is even or odd.</li>
-            <li>Create a simple calculator using functions.</li>
-            <li>Count vowels in a string.</li>
-            <li>Reverse a list without using built-in reverse().</li>
-            <li>Find the largest of three numbers.</li>
-        </ul>
-    </section>
+  <section>
+    <h2 id="week3" onclick="toggleContent('week3c')">📦 Week 3: Data Structures</h2>
+    <div class="content" id="week3c">
+      <ul>
+        <li>Lists and Tuples</li>
+        <li>Dictionaries and Sets</li>
+        <li>Strings and List Comprehension</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="week4" onclick="toggleContent('week4c')">🚀 Week 4: Practice & Projects</h2>
+    <div class="content" id="week4c">
+      <ul>
+        <li>Mini Projects (Calculator, Quiz App)</li>
+        <li>File Handling & Exceptions</li>
+        <li>Final Revision and Tips</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="practice">
+    <h2 onclick="toggleContent('practice')">💡 Practice Questions</h2>
+    <div class="content" id="practice">
+      <a onclick="alert('Use a temp variable to swap!')">Swap Two Numbers</a>
+      <a onclick="alert('Use if num % 2 == 0 to check even')">Check Even or Odd</a>
+      <a onclick="alert('Try using def add(a, b): return a + b')">Simple Calculator</a>
+      <a onclick="alert('Use for loop to count vowels')">Count Vowels in a String</a>
+      <a onclick="alert('Use slicing: list[::-1]')">Reverse a List</a>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-    <p>© 2025 AJ'sPython | Made with ❤️ to help beginners learn Python</p>
+  © 2025 AJ'sPython | Built with ❤️ for Python Beginners
 </footer>
+
+<script>
+  function toggleContent(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === "block" ? "none" : "block";
+  }
+</script>
 
 </body>
 </html>
+
