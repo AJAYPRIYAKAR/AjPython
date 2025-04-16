@@ -7,18 +7,36 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f2f5f7;
+      background-image: url('vijay.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Dark overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
     }
 
     header {
-      background-color: #24292e;
+      background-color: rgba(36, 41, 46, 0.8);
       padding: 20px;
       color: white;
       text-align: center;
     }
 
     nav {
-      background-color: #0366d6;
+      background-color: rgba(3, 102, 214, 0.9);
       padding: 10px;
       text-align: center;
     }
@@ -34,13 +52,13 @@
       max-width: 900px;
       margin: 30px auto;
       padding: 20px;
-      background: white;
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     h2 {
-      color: #0366d6;
+      color: #fff;
       cursor: pointer;
     }
 
@@ -57,13 +75,13 @@
     .practice a {
       display: block;
       margin: 5px 0;
-      color: #0366d6;
+      color: #ffd700;
       text-decoration: underline;
       cursor: pointer;
     }
 
     footer {
-      background-color: #24292e;
+      background-color: rgba(36, 41, 46, 0.8);
       color: white;
       text-align: center;
       padding: 15px;
@@ -169,4 +187,3 @@
 
 </body>
 </html>
-
